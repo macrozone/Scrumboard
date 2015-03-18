@@ -6,6 +6,7 @@
 		value: "in-progress", label: "In progress", icon: "glyphicon-play"
 	done:
 		value: "done", label: "Done", icon: "glyphicon-ok"
+
 @Cards.attachSchema new SimpleSchema
 	title:
 		label: "Title"
@@ -38,6 +39,7 @@
 	estimate: 3
 	responsible: "Marco"
 	state: "todo"
+
 @Cards.SAMPLE_IN_PROGRESS =
 	_id: "sample-in-progress"
 	title: "As a user, i want to create new cards"
@@ -45,6 +47,7 @@
 	estimate: 3
 	responsible: "Marco"
 	state: "in-progress"
+	
 @Cards.SAMPLE_DONE =
 	_id: "sample-done"
 	title: "As a user, i want to create new cards"
