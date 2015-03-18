@@ -1,0 +1,26 @@
+template(name="scrumboard")
+	h1 Scrumboard
+	.scrumboard
+		.col-xs-3
+			+scrumboard_create
+		.columns.col-xs-9
+			each states
+				+scrumboard_column
+template(name="scrumboard_column")
+	.col-xs-4.column(class="column-#{value}")
+		h2.title 
+			.glyphicon(class=icon)
+			| #{label}
+
+		+scrumboard_cards(state=value)
+				
+
+template(name="scrumboard_create")
+	h3 Create Card
+	+quickForm(collection="Cards" class="form-create-card" type="insert")
+
+template(name="scrumboard_cards")
+	ul.cards
+		each cards
+			+scrumboard_cards_card
+

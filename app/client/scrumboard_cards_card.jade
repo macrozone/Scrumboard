@@ -1,0 +1,9 @@
+template(name="scrumboard_cards_card")
+	li.card(draggable="true")
+		h3.title=title
+		span.estimate=estimate
+		p.description=description
+		p.responsible=responsible
+		each states
+			button.btn.btn-default.btn-set-state(class="btn-state-#{value}" data-state=value)
+				.glyphicon(class=icon)
