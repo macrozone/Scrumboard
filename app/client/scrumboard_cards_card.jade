@@ -4,6 +4,8 @@ template(name="scrumboard_cards_card")
 		span.estimate=estimate
 		p.description=description
 		p.responsible=responsible
+		button.btn.btn-delete.btn-danger 
+			i.glyphicon.glyphicon-remove
 		each states
 			button.btn.btn-default.btn-set-state(class="btn-state-#{value}" data-state=value)
 				.glyphicon(class=icon)

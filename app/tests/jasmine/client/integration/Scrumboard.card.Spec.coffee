@@ -32,6 +32,25 @@ describe "Scrumboard", ->
 		it "is draggable", ->
 			expect $card.prop "draggable"
 			.toBe true
+		it "has a delete button", ->
+				expect $card.find(".btn-delete").length
+				.toBe 1
+				
+		describe "delete-button", ->
+			it "deletes the card on click", ->
+				$card.find(".btn-delete").trigger "click"
+				Tracker.flush()
+				expect Cards.findOne Cards.SAMPLE._id
+				.not.toBeDefined()
+			it "deletes no other card on click", ->
+				$card.find(".btn-delete").trigger "click"
+				Tracker.flush()
+				expect Cards.findOne Cards.SAMPLE_IN_PROGRESS._id
+				.toBeDefined()
+				expect Cards.findOne Cards.SAMPLE_DONE._id
+				.toBeDefined()
+
+
 		describe "card-todo", ->
 			it "shows button to select done or in-progress", ->
 				expect($card.find(".btn-state-todo").length).toBe 0

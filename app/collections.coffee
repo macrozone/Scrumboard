@@ -30,6 +30,7 @@
 		autoform:
 			options: _.values @Cards.States
 		defaultValue: "todo"
+
 @Cards.SAMPLE =
 	_id: "sample"
 	title: "As a user, i want to create new cards"
@@ -51,7 +52,3 @@
 	estimate: 3
 	responsible: "Marco"
 	state: "done"
-
-@AdminConfig =
-	collections:
-		Cards: {}

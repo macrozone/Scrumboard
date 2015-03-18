@@ -1,6 +1,7 @@
 Router.route "scrumboard",
 	path: "/"
 	template: "scrumboard"
+	subscriptions: -> Meteor.subscribe "cards"
 	data: ->
 		states: -> _.values Cards.States
 
