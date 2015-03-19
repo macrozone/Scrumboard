@@ -1,1 +1,4 @@
-Meteor.publish "cards", -> Cards.find()
+Meteor.startup ->
+
+		
+	Meteor.publish "cards", -> Cards.find()

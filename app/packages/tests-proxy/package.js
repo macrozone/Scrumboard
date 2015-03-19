@@ -11,4 +11,5 @@ Package.onUse(function (api) {
 	api.add_files("tests/jasmine/client/integration/Scrumboard.columns.Spec.coffee",["client"]);
 	api.add_files("tests/jasmine/client/integration/Scrumboard.form.Spec.coffee",["client"]);
 	api.add_files("tests/jasmine/client/integration/TestHelpers.coffee",["client"]);
+	api.add_files("tests/jasmine/server/integration/RestApiSpec.coffee",["server"]);
 });

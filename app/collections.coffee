@@ -1,4 +1,4 @@
-@Cards = new Mongo.Collection "Cards"
+@Cards = new Mongo.Collection "cards"
 @Cards.States = 
 	todo:
 		value: "todo", label: "Todo", icon: "glyphicon-pause"
@@ -14,16 +14,18 @@
 	description:
 		label: "Description"
 		type: String
+		optional: yes
 		autoform:
 			rows: 8
 	estimate: 
 		label: "Estimate"
 		type: Number
 		allowedValues: [1,2,3,5,8]
-	
+		optional: yes
 	responsible: 
 		label: "Responsible person"
 		type: String
+		optional: yes
 	state:
 		label: "State"
 		type: String
@@ -31,6 +33,7 @@
 		autoform:
 			options: _.values @Cards.States
 		defaultValue: "todo"
+			
 
 @Cards.SAMPLE =
 	_id: "sample"
@@ -47,7 +50,7 @@
 	estimate: 3
 	responsible: "Marco"
 	state: "in-progress"
-	
+
 @Cards.SAMPLE_DONE =
 	_id: "sample-done"
 	title: "As a user, i want to create new cards"
