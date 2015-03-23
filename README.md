@@ -22,7 +22,11 @@ In description, you can use markdown to format the text, if you want.
 - It has a great commmunity and nice packages
 - It is a good example how modern web-frameworks should work.
 
-and most importent: **its fun**
+and most of all: 
+
+- i am lazy 
+- i want to get things done
+- **its fun!**
 
 ## Tests
 
