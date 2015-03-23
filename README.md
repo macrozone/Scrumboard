@@ -67,6 +67,21 @@ There are the following routes (CRUDL):
 ```
 See https://github.com/macrozone/Scrumboard/blob/master/app/collections.coffee for the schema (json)
 
+**Notice**:
+
+PUT requires a modifier. E.g. 
+
+```
+{"$set":
+  {
+      "title": "Write Tests",
+      "description": "first write tests",
+      "estimate": 3,
+      "responsible": "Marco",
+      "state": "in-progress"
+  }
+}
+```
 Authentification is not required at the moment as this is a demo.
 
 ## install
