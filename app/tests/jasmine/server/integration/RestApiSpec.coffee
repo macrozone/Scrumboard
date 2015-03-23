@@ -82,10 +82,10 @@ Jasmine.onTest ->
 				Cards.insert Cards.SAMPLE_IN_PROGRESS
 			it "deletes a card", ->
 				expect GET("api/cards").data
-					.toContain Cards.SAMPLE
+				.toContain Cards.SAMPLE
 				DELETE "api/cards/#{Cards.SAMPLE._id}"
 				expect GET("api/cards").data
-					.not.toContain Cards.SAMPLE
+				.not.toContain Cards.SAMPLE
 			it "throws error when deleting a non existing card", ->
 		
 				DELETE "api/cards/#{Cards.SAMPLE._id}"

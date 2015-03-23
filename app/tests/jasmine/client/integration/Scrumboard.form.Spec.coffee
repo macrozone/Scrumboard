@@ -51,6 +51,7 @@ describe "Scrumboard", ->
 				.toBe "input"
 				expect $input.prop "type"
 				.toBe "text"
+				
 			describe "submit", ->
 				$form = null
 				beforeEach ->

@@ -1,13 +1,14 @@
 template(name="scrumboard")
-	h1 Scrumboard
+	.col-xs-12 
+		h1.page-header Scrumboard
 	.scrumboard
-		.col-xs-3
+		.col-sm-3.col-xs-12
 			+scrumboard_create
-		.columns.col-xs-9
+		.columns.col-sm-9.col-xs-12
 			each states
 				+scrumboard_column
 template(name="scrumboard_column")
-	.col-xs-4.column(class="column-#{value}")
+	.col-sm-4.col-xs-6.column(class="column-#{value}")
 		h2.title 
 			.glyphicon(class=icon)
 			| #{label}

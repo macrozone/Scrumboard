@@ -1,11 +1,23 @@
 template(name="scrumboard_cards_card")
 	li.card(draggable="true")
-		h3.title=title
-		span.estimate=estimate
-		p.description=description
-		p.responsible=responsible
-		button.btn.btn-delete.btn-danger 
-			i.glyphicon.glyphicon-remove
-		each states
-			button.btn.btn-default.btn-set-state(class="btn-state-#{value}" data-state=value)
-				.glyphicon(class=icon)
+		if editMode
+			+scrumboard_cards_card_edit
+		else
+			h3.title=title
+			span.estimate=estimate
+			p.description=description
+			p.responsible=responsible
+			.tools
+				button.btn.btn-delete.btn-danger 
+					i.glyphicon.glyphicon-trash
+				button.btn.btn-edit.btn-primary
+					i.glyphicon.glyphicon-pencil
+				each states
+					button.btn.btn-default.btn-set-state(class="btn-state-#{value}" data-state=value)
+						.glyphicon(class=icon)
+			
+
+
+template(name="scrumboard_cards_card_edit")
+	+quickForm(class="edit-form" collection="Cards" doc=this id=_id type="update")
+	button.btn.btn-danger.btn-cancel Cancel

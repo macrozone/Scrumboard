@@ -17,8 +17,6 @@ describe "Scrumboard", ->
 				Tracker.flush()
 				share.TestHelpers.checkColumnForSampleCard $ ".scrumboard .column-todo ul.cards"
 				
-
-
 		describe "column-in-progress", ->
 			it "should have a column for in-progress", ->
 				$column = $ ".scrumboard .column-in-progress"
