@@ -6,6 +6,7 @@ See scrumboard.macrozone.meteor.com
 ## Facts:
 
 - [x] ~~backbone and express~~ Meteor!
+- [x] Test-Driven development
 - [x] Live-Data with Websockets (sockjs)
 - [x] Rest API
 - [x] DDP-API
