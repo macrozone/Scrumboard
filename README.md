@@ -3,13 +3,16 @@ Scrumboard - little project for ZHAW
 
 See scrumboard.macrozone.meteor.com
 
-Facts:
+## Facts:
 
 - [x] ~~backbone and express~~ Meteor!
 - [x] Live-Data with Websockets (sockjs)
 - [x] Rest API
 - [x] DDP-API
 - [x] Peristence with mongoDB
+- [x] Bootstrap
+- [x] Drag & Drop
+- [x] Supports Markdown in Storycards
 
 ## Usage
 
