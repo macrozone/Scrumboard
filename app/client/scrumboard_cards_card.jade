@@ -11,7 +11,9 @@ template(name="scrumboard_cards_card")
 			.description
 				+markdown
 					#{description}
-			p.responsible=responsible
+			p
+				| Responsible: 
+				span.responsible=responsible
 			.tools
 				button.btn.btn-delete.btn-danger 
 					i.glyphicon.glyphicon-trash
