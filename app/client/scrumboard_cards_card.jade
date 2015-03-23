@@ -3,9 +3,14 @@ template(name="scrumboard_cards_card")
 		if editMode
 			+scrumboard_cards_card_edit
 		else
-			h3.title=title
-			span.estimate=estimate
-			p.description=description
+			.header
+				span.label.label-danger.estimate=estimate
+
+				h3.title=title
+				
+			.description
+				+markdown
+					#{description}
 			p.responsible=responsible
 			.tools
 				button.btn.btn-delete.btn-danger 
