@@ -1,6 +1,8 @@
 # Scrumboard
 Scrumboard - little project for ZHAW
 
+A Scrumboard with three columns were you can add and edit cards.
+
 See http://scrumboard.macrozone.meteor.com
 
 ## Facts:
