@@ -25,7 +25,11 @@ and most importent: **its fun**
 
 ## Tests
 
-If you run it on develop, you'll find a velocity
+If you run it on develop, you'll find a velocity-test-button on the top right corner:
+
+<img src="velcity-test-sample.png" height="400px" />
+
+The Tests are in app/tests directory and are written with [Jasmine](http://jasmine.github.io/). It has client-integration tests, as well as server-tests to test the additional REST-APi. There aren't any unit-tests as there is hardly any custom business-logic.
 
 ## Api
 
