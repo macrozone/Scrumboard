@@ -18,7 +18,7 @@ In description, you can use markdown to format the text, if you want.
 - It allows you to share logic between server and client: Form-validation on both client an server? You get it out-of-the-box (thanks to aldeed:autoform)
 - It integrates nicely with node-ecosystem
 - It integrates nicely with test-frameworks
-- It makes development really fast
+- It makes development really fast and efficient
 - It has a great commmunity and nice packages
 - It is a good example how modern web-frameworks should work.
 
