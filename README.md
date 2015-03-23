@@ -12,7 +12,7 @@ In description, you can use markdown to format the text, if you want.
 ## Why Meteor?
 
 - Its easy
-- It has live-data out-of-the-box
+- It has live-data out-of-the-box (trough websockets and fallbacks)
 - It enables you to focus on the actual problem you want to solve with your app. 
 - You have one code-base though the entire stack, from client to server to database. No more messing with data-wiring or writing boilerplate. 
 - It allows you to share logic between server and client: Form-validation on both client an server? You get it out-of-the-box (thanks to aldeed:autoform)
