@@ -1,11 +1,41 @@
 # Scrumboard
 Scrumboard - little project for ZHAW
 
+
+## Usage
+
+Create new Cards, add title, description, estimate and a responsible person. Move Cards to other columns with Drag&Drop or use the buttons. You can also delete and edit cards.
+
+In description, you can use markdown to format the text, if you want.
+
+## Why Meteor?
+
+- Its easy
+- It has live-data out-of-the-box
+- It enables you to focus on the actual problem you want to solve with your app. 
+- You have one code-base though the entire stack, from client to server to database. No more messing with data-wiring or writing boilerplate. 
+- It allows you to share logic between server and client: Form-validation on both client an server? You get it out-of-the-box (thanks to aldeed:autoform)
+- It integrates nicely with node-ecosystem
+- It integrates nicely with test-frameworks
+- It makes development really fast
+- It has a great commmunity and nice packages
+- It is a good example how modern web-frameworks should work.
+
+and most importent: **its fun**
+
+## Tests
+
+If you run it on develop, you'll find a velocity
+
 ## Api
+
+Scrumboard provides two APIs: DDP and REST
 
 ### DDP (Highlevel, Live-Data)
 
-You can connect with DDP to the app to get cards. There are multiple ddp implementations (meteor, node, java, ruby, ...)
+DDP is a live-data-protocol on top of websockets, it supports Pub/Subs and Remote Calls. Scrumboard publishes it cards under subscription "cards". You can do every operation on the collection at the moment, as it is not restricted.
+
+There are multiple ddp implementations (meteor, node, java, ruby, ...) wich should work.
 
 Meteor example:
 ```javascript
@@ -28,10 +58,19 @@ There are the following routes (CRUDL):
 ```
 See https://github.com/macrozone/Scrumboard/blob/master/app/collections.coffee for the schema (json)
 
+Authentification is not required at the moment as this is a demo.
+
 ## install
 
 1. Install meteor `curl https://install.meteor.com/ | sh`
 2. checkout project and `cd app; meteor`
 3. ????
 4. profit
+
+
+## deploy
+
+run `meteor deploy scrumboard.macrozone.meteor.com``
+
+or bundle it with `meteor build` and run it as ordinary node application. It requires a MongoDB for persistence
 
