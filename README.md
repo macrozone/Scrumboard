@@ -108,12 +108,14 @@ Authentification is not required at the moment as this is a demo.
 
 ## deploy
 
-run `meteor deploy scrumboard.macrozone.meteor.com``
+run `meteor deploy scrumboard.macrozone.meteor.com`
 
 This will deploy the application under meteors test/development-hosting. I normally use dedicated node hosting for this, but I like the one-command-deployment and wanted to show it.
 
 Bundling as node application (+ cordova app) is easy, however:
 
 Run `meteor build` and you get a tarball that you can run anywhere where node is present (node 0.10.36 atm.). It requires a MongoDB (2.4) for persistence.
+
+Its deployed like this on http://scrumboard.macrozone.ch/
 
 
