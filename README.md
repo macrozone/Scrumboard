@@ -1,6 +1,7 @@
 # Scrumboard
 Scrumboard - little project for ZHAW
 
+See scrumboard.macrozone.meteor.com
 
 ## Usage
 
@@ -76,5 +77,10 @@ Authentification is not required at the moment as this is a demo.
 
 run `meteor deploy scrumboard.macrozone.meteor.com``
 
-or bundle it with `meteor build` and run it as ordinary node application. It requires a MongoDB for persistence
+This will deploy the application under meteors test/development-hosting. I normally use dedicated node hosting for this, but I like the one-command-deployment and wanted to show it.
+
+Bundling as node application (+ cordova app) is easy, however:
+
+Run `meteor build` and you get a tarball that you can run anywhere where node is present (node 0.10.36 atm.). It requires a MongoDB (2.4) for persistence.
+
 
