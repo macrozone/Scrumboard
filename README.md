@@ -1,7 +1,7 @@
 # Scrumboard
 Scrumboard - little project for ZHAW
 
-See scrumboard.macrozone.meteor.com
+See http://scrumboard.macrozone.meteor.com
 
 ## Facts:
 
