@@ -3,6 +3,14 @@ Scrumboard - little project for ZHAW
 
 See scrumboard.macrozone.meteor.com
 
+Facts:
+
+- [x] ~~backbone and express~~ Meteor!
+- [x] Live-Data with Websockets (sockjs)
+- [x] Rest API
+- [x] DDP-API
+- [x] Peristence with mongoDB
+
 ## Usage
 
 Create new Cards, add title, description, estimate and a responsible person. Move Cards to other columns with Drag&Drop or use the buttons. You can also delete and edit cards.
